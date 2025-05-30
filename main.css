@@ -9,14 +9,16 @@ body {
     font-family: "Lucida Sans Unicode";
 }
 
-.math_title {
-    height: 600px;
-    width: 600px;
-    background-image: url("https://ih1.redbubble.net/image.4330194758.0412/fposter,small,wall_texture,square_product,600x600.u5.jpg");
+#page-title {
+}
+
+.math-title {
+    height: 50px; /* temp; was j annoyingly big lol */
+    background-image: url("https://www.pinterest.com/pin/175570085469363205/");
 }
  
-.compsci_title {
-    background-image: url("https://www.pewresearch.org/wp-content/uploads/2019/02/FT_19.02.08_Algorithms_feature.jpg");
+.compsci-title {
+    background-image: url("https://i.pinimg.com/736x/e3/18/1a/e3181a811c4d8340eccc86fa1852083a.jpg"); /* note: find diff photo */
 }
 
 /* notes for coy to read:
@@ -26,10 +28,30 @@ i think it's better w changing screen sizes
 */
 
 /* table section begins */
+
+.table-container {
+    max-height: 60vh; /* viewport height; more reliable for responsive designs */
+    overflow-y: scroll;
+    border: 2px solid rgb(255, 0, 166);
+    margin: 5%;
+}
+
+/* since scrollbars are browser dependent, need webkit to style */
+.table-container::-webkit-scrollbar {
+    width: 4%;
+}
+.table-container::-webkit-scrollbar-thumb {
+    background-color: pink;
+}
+
+.table {
+    margin: 5% auto; /* centers table */
+    table-layout: fixed; /* means browser doesn't need to inspect details, so super fast. use when want even spacing */
+}
+
 .table, th, td {
-    border: 2px solid;
-    border-color: pink;
-    width: 80%;
+    border: 5px solid #df83ae;
+    width: 90%;
     border-collapse: collapse; /* makes th and td border's combine into 1 border */
 }
 
@@ -39,7 +61,7 @@ th, td {
 }
 
 th {
-    background-color: darksalmon;
+    background-color: rgb(245, 230, 240);
 }
 
 /* table section ends */
