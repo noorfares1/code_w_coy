@@ -1,3 +1,10 @@
+/* resets page to default margins
+will allow for more creative control later */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Lucida Sans Unicode";
 }
@@ -12,9 +19,27 @@ body {
     background-image: url("https://www.pewresearch.org/wp-content/uploads/2019/02/FT_19.02.08_Algorithms_feature.jpg");
 }
 
-.table {
-    border-style: solid;
-    border-radius: 5px;
-    border-color: gray;
-    border-width: 1px;
+/* notes for coy to read:
+- any code styling feedback is wanted and welcome (ie. how i write comments, etc)
+- in the css file, i think we should try to use % instead of px bc 
+i think it's better w changing screen sizes
+*/
+
+/* table section begins */
+.table, th, td {
+    border: 2px solid;
+    border-color: pink;
+    width: 80%;
+    border-collapse: collapse; /* makes th and td border's combine into 1 border */
 }
+
+th, td {
+    text-align: center;
+    padding: 3%; /* relative to width of containing block (thead, tbody) */
+}
+
+th {
+    background-color: darksalmon;
+}
+
+/* table section ends */
