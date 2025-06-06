@@ -61,7 +61,13 @@ body {
 }
  
 #compsci-title {
-    background-image: url("https://i.pinimg.com/736x/e3/18/1a/e3181a811c4d8340eccc86fa1852083a.jpg"); /* note: find diff photo */
+    background-image: url("https://i.pinimg.com/736x/e3/18/1a/e3181a811c4d8340eccc86fa1852083a.jpg");
+}
+
+#tbr-title {
+    background-image: url("https://i.pinimg.com/736x/b9/f1/1d/b9f11d51db3838c09a42db5f9788b78e.jpg");
+    color: rgb(177, 164, 164);
+    -webkit-text-stroke: .25px rgb(75, 60, 60);
 }
 
 /* notes for coy to read:
