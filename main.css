@@ -10,6 +10,26 @@ body {
     background-color: #EEEEEE;
 }
 
+.nav-header {
+    border: 3px solid hsl(339, 100%, 87%);
+    border-radius: 4px;
+    display: flex;
+}
+
+.nav-button {
+    margin: 2px auto;
+    padding: 3px;
+    border: 4px;
+    border-style: none none outset double;
+    border-color: rgb(216, 98, 117);
+}
+
+.nav-button:hover {
+    background-color:hsl(339, 100%, 87%);
+    opacity: 70%;
+    border-radius: 7px;
+}
+
 
 #page-title {
     /* change this, just a place holder. not good to use empty css rulesets */
@@ -57,6 +77,7 @@ i think it's better w changing screen sizes
     overflow-y: scroll;
     border: 2px solid rgb(255, 0, 166);
     margin: 5%;
+    border-radius: 10px;
 }
 
 /* since scrollbars are browser dependent, need webkit to style */
@@ -64,6 +85,7 @@ i think it's better w changing screen sizes
     width: 4%;
 }
 .table-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
     background-color: pink;
 }
 
