@@ -1,14 +1,21 @@
-/* resets page to default margins
-will allow for more creative control later */
-* {
+
+/* -------- GENERAL STYLING -------- */
+
+* { /* resets page to default margins */
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
     font-family: "Lucida Sans Unicode";
     background-color: #EEEEEE;
 }
+
+/* -------- NAVIGATION HEADER -------- */
 
 .nav-header {
     border: 3px solid hsl(339, 100%, 87%);
@@ -30,13 +37,14 @@ body {
     border-radius: 7px;
 }
 
+/* -------- MAIN PAGE HEADER -------- */
 
 #page-title {
-    /* change this, just a place holder. not good to use empty css rulesets */
     border: solid black 2px;
     border-radius: 4px;
 }
 
+/* -------- PAGE HEADERS -------- */
 
 .topics-container {
     display: flex;
@@ -54,29 +62,34 @@ body {
     text-align: center;
 }
 
+#about-title {
+    background-image: url(../photos/coy_and_noor.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    color: white;
+    -webkit-text-stroke: .25px pink;
+}
+
 #math-title {
-    background-image: url("https://as2.ftcdn.net/jpg/03/55/83/97/1000_F_355839755_UXzivXmrIE6ypvQ2NEyXAKlkYaAvFVXZ.webp");
+    background-image: url(../photos/math.jpeg);
     background-size: cover;
     color: #EEEEEE;
+    -webkit-text-stroke: .25px pink;
 }
  
 #compsci-title {
-    background-image: url("https://i.pinimg.com/736x/e3/18/1a/e3181a811c4d8340eccc86fa1852083a.jpg");
+    background-image: url(../photos/compsci.jpeg);
+    -webkit-text-stroke: .25px pink;
 }
 
 #tbr-title {
-    background-image: url("https://i.pinimg.com/736x/b9/f1/1d/b9f11d51db3838c09a42db5f9788b78e.jpg");
+    background-image: url(../photos/books.jpeg);
     color: rgb(177, 164, 164);
-    -webkit-text-stroke: .25px rgb(75, 60, 60);
+    -webkit-text-stroke: .25px pink;
 }
 
-/* notes for coy to read:
-- any code styling feedback is wanted and welcome (ie. how i write comments, etc)
-- in the css file, i think we should try to use % instead of px bc 
-i think it's better w changing screen sizes
-*/
-
-/* table section begins */
+/* -------- TABLE OF TOPICS TO STUDY -------- */
 
 .table-container {
     max-height: 60vh; /* viewport height; more reliable for responsive designs */
@@ -114,5 +127,3 @@ th, td {
 th {
     background-color: rgb(245, 230, 240);
 }
-
-/* table section ends */
