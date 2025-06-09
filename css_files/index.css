@@ -17,46 +17,43 @@ body {
 
 .main {
     position: relative;
-    top: 30px;
+    top: 60px;
 }
 
 a {
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-a:hover {
     text-decoration: none;
 }
 
-/* a:visited {
-    color: purple;
-} */
+a:hover {
+    cursor: pointer;
+}
 
 /* -------- NAVIGATION HEADER -------- */
 
 .nav-header {
     border: 3px solid hsl(339, 100%, 87%);
-    border-radius: 4px;
+    border-radius: 5px;
     display: flex;
     position: fixed;
     width: 100%;
-    height: 30px;
+    height: 50px;
 }
 
 .nav-button {
-    margin: 2px auto;
-    padding: 3px;
-    border: 4px;
+    margin: 10px auto;
+    padding: 2px;
+    border: 1px rgb(216, 98, 117);
     border-style: none none outset double;
-    border-color: rgb(216, 98, 117);
+    border-radius: 10px;
+    box-shadow: 0px 4px;
 }
 
-.nav-button:hover {
-    background-color:hsl(339, 100%, 87%);
-    opacity: 70%;
-    border-radius: 7px;
+.nav-button:active {
+    background-color: #ffffff;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    box-shadow: 0px 0px;
 }
 
 /* -------- MAIN PAGE HEADER -------- */
