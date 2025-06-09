@@ -20,6 +20,20 @@ body {
     top: 30px;
 }
 
+a {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* a:visited {
+    color: purple;
+} */
+
 /* -------- NAVIGATION HEADER -------- */
 
 .nav-header {
