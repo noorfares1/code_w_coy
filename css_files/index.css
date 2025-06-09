@@ -7,8 +7,12 @@
 }
 
 body {
-    font-family: "Lucida Sans Unicode";
+    /* font-family: "Lucida Sans Unicode"; */
     background-color: #EEEEEE;
+    /* new website font */
+    font-family: "Quattrocento", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .main {
